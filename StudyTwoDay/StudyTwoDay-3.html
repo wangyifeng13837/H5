@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+<h3>表单标签</h3>
+<hr/>
+<ul>
+    <li>表单控件</li>
+    <li>提示文本</li>
+    <li>表单域</li> <!--用form标签包裹-->
+</ul>
+<hr/>
+<!--目前学习了但标签 br hr img base input -->
+<form action="asdasd.php" method="post">
+用户名：<input type="text" maxlength="16" /> <br/>   <!--这是一个文本框 maxlength限制输入最多字符-->
+密　码：<input type="password" maxlength="8"/> <br/> <!--这是格密码框-->
+性　别：<input type="radio" name="sex" checked="checked"/> 女 <!--type="radio"这是个单选框
+checked="checked"默认选项-->
+        <input type="radio" name="sex"/>男 <br/>
+爱　好：<input type="checkbox" name="hobby"/>足球 <!--type = "checkbox"这是复选框-->
+        <input type="checkbox" name = "hobby"/>游泳
+        <input type="checkbox" name="hobby1" /> 蹦极
+        <input type="checkbox" name="hobby1" checked="checked" /> 睡觉<br/>
+<input type="button" value="搜索按钮" /><br/> <!--普通按钮-->
+<input type="submit" value="提交"/><!--提交按钮-->
+<input type="reset" value="重置"/> <br/><!--重置按钮-->
+<input type="image" src="../venv/picture/OnePice.jpg" width="50"/><br/><!--图像按钮-->
+    上传图片<input type="file"/><!--上传文件按钮-->
+</form>
+</body>
+</html>

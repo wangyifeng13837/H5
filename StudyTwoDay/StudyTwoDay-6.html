@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H5新增标签</title>
+</head>
+<body>
+<header>语义：定义页面的头部</header>
+<nav>语义：定义导航栏</nav>
+<footer>语义：定义页面底部，页脚</footer>
+<article>语义：定义文章</article>
+<section>语义：定义区域</section>
+<aside>语义：定义其所处内容之外的内容侧边</aside>
+<input type="text" value="输入内容" list="name"/> <!--input里面使用list-->
+<datalist id="name">  <!--datalist 里面用id来实现input链接-->
+    <option>张飞</option>
+    <option>张良</option>
+    <option>张学友</option>
+    <option>张学良</option>
+    <option>关关雎鸠</option>
+</datalist>
+
+<hr/>
+<h3>fieldset相关元素打包分组</h3> <br/>
+<fieldset>
+    <legend>账号登录</legend> <br/>
+    用户名:<input type="text" value="请输入手机号码"/><br><br/>
+    密　码:<input type="password" value="请输入验证码"/>
+
+</fieldset>
+
+<hr/>
+<h3>H5新增的Input类型</h3>
+<fieldset>
+    <legend>H5新增的Input类型</legend>
+    <form action="">
+        邮箱：<input type="email"/> <!--qq@aa.com--><br/>
+        手机：<input type="tel"/> <!--手机格式数字--><br/>
+        数字：<input type="number"/> <!--只能时数字--><br/>
+        url&nbsp;：<input type="url"/> <!--只能时网址格式--><br/>
+        搜索：<input type="search"/> <!--搜索--><br/>
+        区域：<input type="range"/> <!--区域滑块--><br/>
+        时间：<input type="time"/> <!--小时 分钟--><br/>
+        年月日：<input type="date"/> <!--年月日--><br/>
+        月份：<input type="month"/> <!--年月--><br/>
+        <input type="submit"/>
+    </form>
+</fieldset>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合并单元格</title>
+</head>
+<body>
+<h3>合并单元格</h3>
+<ul>
+    <li>
+        跨行合并 在需要合并的行的标签中加入 关键字 rowspan  合并的参数是要合并的行数，原先的行需要删除
+    </li>
+    <li>
+        跨列合并 在需要合并的列的标签中加入 关键字 colspan   合并的参数是要合并的列数，原先的列需要删除
+    </li>
+    <li>
+        合并行的顺序从上往下，合并列的顺序从左往右
+    </li>
+</ul>
+<hr/>
+<table width="800" border="4" cellpadding="10" cellspacing="0" align="center">
+    <caption><strong>财政收入</strong></caption>
+    <thead>
+    <th>&nbsp;&nbsp;&nbsp;</th>
+    <th>阿里爸爸</th>
+    <th>金东</th>
+    <th>疼讯</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td><strong>第一季度</strong></td>
+        <td>20</td>
+        <td>30</td>
+        <td rowspan="3">40</td>
+    </tr>
+    <tr>
+        <td><strong>第二季度</strong></td>
+        <td>20</td>
+        <td>30</td>
+
+    </tr>
+    <tr>
+        <td><strong>第三季度</strong></td>
+        <td>20</td>
+        <td>？</td>
+    </tr>
+    <tr>
+        <td><strong>第四季度</strong></td>
+        <td colspan="2">20</td>
+        <td>40</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
