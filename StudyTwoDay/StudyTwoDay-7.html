@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增占位符焦点多选属性</title>
+</head>
+<body>
+<h3>新增占位符焦点多选属性</h3>
+<hr/>
+<fieldset>
+    <legend>
+        常用属性
+    </legend>
+<table width="700" border="3" cellpadding="10" cellspacing="2" aligin="center">
+        <caption><strong>常用属性</strong></caption>
+        <thead>
+        <tr>
+            <th>属性</th>
+            <th>用法</th>
+            <th>含义</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>placeholder</td>
+            <td>input中 vaule= 换成 placeholder=</td>
+            <td>占位符，当用户输入时，里面的文字消失，删除文字时文字返回输入框</td>
+        </tr>
+        <tr>
+            <td>autofocus</td>
+            <td>input中text类型 属性位置添加autofocus即可</td>
+            <td>规定当页面加载时input元素自动获得焦点</td>
+        </tr>
+        <tr>
+            <td>multiple</td>
+            <td>input file类型 属性为multiple</td>
+            <td>多文件上传</td>
+        </tr>
+        <tr>
+            <td>autocomplete</td>
+            <td>1.autocomplete 首先需要提交按钮 2.这个表单必须要有name<br/>
+                input text类型中 添加complete属性，默认为on
+            </td>
+            <td>规定表单是否应该启用自动记录完成功能，on表示记录，off表示不记录</td>
+        </tr>
+        <tr>
+            <td>required</td>
+            <td>input 添加required属性</td>
+            <td>必填项</td>
+        </tr>
+        <tr>
+            <td>accesskey</td>
+            <td>input 添加accesskey属性</td>
+            <td>规定激活元素的快捷键 采用alt+字母的形式</td>
+        </tr>
+        </tbody>
+</table>
+
+</fieldset>
+<label>用户名：<input type="text" placeholder="请输入手机号码" autofocus/></label><br/>
+上传文件：<input type="file" multiple/>
+<h4>自动记录完成</h4>
+1.autocomplete 首先需要提交按钮
+2.这个表单必须要有name
+<form action="">
+    姓名：<input type="text" autocomplete name="userName"/> <br/>
+
+    昵称：<input type="text" required accesskey="z"/>
+    <input type="submit"/>
+</form>
+
+</body>
+</html>
