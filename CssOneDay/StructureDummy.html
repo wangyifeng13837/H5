@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类</title>
+    <style>
+        div{
+            font: 15px "楷体" ;
+            color: orange;
+        }
+        div:first-child{ /*选取属于其父元素的首个子元素的指定选择器*/
+            color: #f94502;
+        }
+        div:last-child{ /*选取属于其父元素的最后一个子元素的指定选择器*/
+            color: indigo;
+        }
+        div:nth-child(4n){/*匹配属于其父类元素的第n个子元素，不论元素的类型 even偶数 odd奇数* 如果是公式n从0开始*/
+            color: green;
+        }
+        div:nth-last-child(odd){/*与第三个用法相同，只是从最后一个开始计数*/
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+<div>第一个</div>
+<div>第二个</div>
+<div>第三个</div>
+<div>第四个</div>
+<div>第四个</div>
+<div>第四个</div>
+<div>第四个</div>
+<div>第四个</div>
+<div>第四个</div>
+
+</body>
+</html>

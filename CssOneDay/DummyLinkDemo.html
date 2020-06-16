@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style> /*如果四个伪类要同时用 顺序不能变  l,v,h,a*/
+        a:link{ /*未访问时的链接状态*/
+            font-size: 18px;
+            color: darkgreen;
+            font-weight: 900;
+        }
+        a:visited{ /*已访问过的链接*/
+            font-size: 18px;
+            color: red;
+            font-weight: 900;
+        }
+        a:hover{/*鼠标悬停时链接状态*/
+            font-size: 18px;
+            color: blue;
+            font-weight: 900;
+        }
+        a:active{/*选定的链接 鼠标点击后不松开的状态*/
+            font-size: 18px;
+            color: indigo;
+            font-weight: 900;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<div><a href="#">抢购</a></div>
+<a href="#">充值</a>
+</body>
+</html>

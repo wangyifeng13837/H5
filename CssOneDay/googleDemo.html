@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GoogleDemo</title>
+    <style>
+        span{
+            font-size: 100px;
+            font-style: italic;
+        }
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        .orange{
+            color: orange;
+        }
+        .green{
+            color: green;
+        }
+        .font30{
+            font-size: 30px;
+        }
+        .font-italic{
+            font-style:italic
+        }
+        #big{ /*id选择器 类似于身份证号只允许使用一次*/
+            font-size: 40px;
+            color: darkgreen;
+            font-family: "楷体";
+        }
+    </style>
+</head>
+<body>
+<span class="blue">G</span>
+<span class="red">o</span>
+<span class="orange">o</span>
+<span class="blue">g</span>
+<span class="green">l</span>
+<span class="red">e</span>
+<div class="red font30 font-italic">张龙</div>  <!--多类名使用-->
+<div class="font-italic green ">赵虎</div>
+<div class="font30 blue">王朝</div>
+<div class="red font30">马汉</div>
+<div id="big">展昭</div> <!--不可以多次调用id-->
+
+</body>
+</html>
